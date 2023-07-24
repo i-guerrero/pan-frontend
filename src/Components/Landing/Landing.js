@@ -6,7 +6,7 @@ export default function Landing() {
     <div id="landing">
       {/* add photo */}
       <Container>
-        <h1>Landing Photo</h1>
+        <h1>Landing Photo- Test</h1>
       </Container>
     </div>
   );
