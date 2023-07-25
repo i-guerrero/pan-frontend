@@ -1,0 +1,95 @@
+:root {
+    --blue: #2975A3;
+    --grey: #4A4D4F;
+    --lightblue: #a3cee9;
+    --imageHeight: 100px;
+}
+
+.container {
+    margin-bottom: 2rem;
+}
+
+.blurbText {
+    font: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--grey);
+}
+
+.rightText {
+    text-align: right;
+}
+
+.leftText {
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+
+    .leftText,
+    .rightText {
+        margin: 0 auto;
+        display: block;
+        text-align: left;
+    }
+}
+
+.dateText {
+    text-align: left;
+    font: 1.5rem sans-serif;
+    color: var(--blue);
+    font-weight: bolder;
+
+}
+
+.rightCol {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+
+    .rightCol {
+        justify-content: flex-start;
+    }
+}
+
+.leftCol {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.lineRow {
+    height: 1.5rem;
+}
+
+.rightBorder {
+    border-right: 2px solid var(--blue);
+}
+
+.leftBorder {
+    border-left: 2px solid var(--blue);
+}
+
+.timelineImage {
+    display: flex;
+    justify-content: center;
+}
+
+.stepImage {
+    width: var(--imageHeight);
+    height: var(--imageHeight);
+    border-radius: 50%;
+    box-sizing: content-box;
+    border: 4px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--lightblue);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}

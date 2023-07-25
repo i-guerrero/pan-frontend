@@ -7,6 +7,7 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import Events from "./Components/Events/Events";
 import Partners from "./Components/Partners/Partners";
 import Contact from "./Components/Contact/Contact";
+import Timeline from "./Components/Timeline/Timeline";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <About />
+        <Timeline />
         <Testimonials />
         <Events />
         <Partners />
