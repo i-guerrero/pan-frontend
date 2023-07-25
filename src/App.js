@@ -7,17 +7,27 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import Events from "./Components/Events/Events";
 import Partners from "./Components/Partners/Partners";
 import Contact from "./Components/Contact/Contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Landing />
-      <About />
-      <Testimonials />
-      <Events />
-      <Partners />
-      <Contact />
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <About />
+        <Testimonials />
+        <Events />
+        <Partners />
+        <Contact />
+      </Router>
     </div>
   );
 }

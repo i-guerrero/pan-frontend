@@ -2,15 +2,14 @@ import Container from "react-bootstrap/Container";
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
+import logo from "../../pan-logo.png";
+import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import "./Contact.css";
-import logo from "../../pan-logo.png"
-import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs"
 
 export default function Contact() {
   return (
-    <div id="contact">
-      {/* add photo */}
-      
+    <div id="contact">    
       <Container>
         <Row>
           <Col xs={6} md={4}>
@@ -23,16 +22,16 @@ export default function Contact() {
             17 Philadephia Ave, Philadephia, PA 01234</p>
             <Row>
               <Col>
-                <BsFacebook />
+                <Link to="https://www.facebook.com/philadephia" target="_blank" rel="noreferrer noopener"><BsFacebook /></Link>
               </Col>
               <Col>
-                <BsTwitter />
+                <Link to="https://twitter.com/PhiladelphiaGov" target="_blank" rel="noreferrer noopener"><BsTwitter /></Link>
               </Col>
               <Col>
-                <BsInstagram />
+                <Link to="https://www.instagram.com/cityofphiladelphia/" target="_blank" rel="noreferrer noopener"><BsInstagram /></Link>
               </Col>
               <Col>
-                <BsLinkedin />
+                <Link to="https://www.linkedin.com/in/haniyyah-b-sharpe-brown-64005110/" target="_blank" rel="noreferrer noopener"><BsLinkedin /></Link>
               </Col>
             </Row>
           </Col>
