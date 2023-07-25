@@ -1,7 +1,11 @@
 .logo-contact {
-    width: 100%;
+    width: 50%;
 }
 
 #contact {
     background-color: #f0f0f0;
+}
+
+h3 {
+    padding-top: 1rem;
 }
